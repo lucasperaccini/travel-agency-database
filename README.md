@@ -6,21 +6,21 @@ Relational database for a travel agency, built during a database administration 
 
 | File | Description |
 |---|---|
-| `01_schema.sql` | Creates the database, 10 tables with foreign keys, and sample data |
-| `02_queries.sql` | 20 queries: JOINs, aggregations, subqueries and date functions |
-| `03_advanced.sql` | Variables, functions, stored procedures, transactions, trigger, view, users and indexes |
+| `01.schema.sql` | Creates the database, 10 tables with foreign keys, and sample data |
+| `02.queries.sql` | 20 queries: JOINs, aggregations, subqueries and date functions |
+| `03.advanced.sql` | Variables, functions, stored procedures, transactions, trigger, view, users and indexes |
 
 ## How to run
 
 Run the files in order on a local MySQL server:
 
 ```bash
-mysql -u root -p < 01_schema.sql
-mysql -u root -p agencia_viajes < 02_queries.sql
-mysql -u root -p agencia_viajes < 03_advanced.sql
+mysql -u root -p < 01.schema.sql
+mysql -u root -p agencia_viajes < 02.queries.sql
+mysql -u root -p agencia_viajes < 03.advanced.sql
 ```
 
-> ⚠️ `01_schema.sql` drops and recreates the database. Use it only in a local test environment.
+> ⚠️ `01.schema.sql` drops and recreates the database. Use it only in a local test environment.
 
 Tested on MySQL 9.5.0.
 
