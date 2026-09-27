@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS agencia_viajes;
+DROP DATABASE IF EXISTS agencia_viajes; -- solo para entorno local de practica
 CREATE DATABASE agencia_viajes;
 USE agencia_viajes;
 
@@ -26,6 +26,7 @@ CREATE TABLE usuario (
     nombre VARCHAR(50) NOT NULL,
     apellido VARCHAR(50) NOT NULL,
     correo_electronico VARCHAR(100) NOT NULL UNIQUE,
+    -- Guardar SOLO el hash (bcrypt/Argon2) generado por la aplicacion, nunca la contraseña en texto plano
     contrasena VARCHAR(255) NOT NULL
 );
 
